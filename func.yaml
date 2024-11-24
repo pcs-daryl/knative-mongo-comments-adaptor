@@ -1,0 +1,12 @@
+specVersion: 0.36.0
+name: knative-mongo-comments-adaptor
+runtime: python
+registry: docker.io/darylang96
+namespace: default
+created: 2024-11-24T21:46:52.6049558+08:00
+invoke: cloudevent
+build:
+  builder: pack
+deploy:
+  namespace: default
+  image: index.docker.io/darylang96/knative-mongo-comments-adaptor@sha256:945a6f7a573f4db6e9d71f6da6c405a177eb03fd7d01de1f681ebf3e99d6bd22
